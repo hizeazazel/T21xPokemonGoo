@@ -10,7 +10,7 @@ body {
     margin: auto;
     width: 80%;
     margin-bottom: 150px;
-    padding-top: 150px;
+    padding-top: 20px;
 }
 
 table {
@@ -30,4 +30,25 @@ th {
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+@media(max-width:450px) {
+        th{
+          display: none;
+        }
+        tbody, tr, td {
+          display: block;
+          width: 100%;
+        }
+        tr {
+          border-bottom: none;
+          margin-bottom: 10px;
+        }
+        td {
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+        }
+        td:first-child {
+          font-weight: bold;
+        }
 }
