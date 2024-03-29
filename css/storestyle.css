@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header,
+.navbar {
+	background-color: #ffffff !important;
+}
+
+.montserrat {
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.btn {
+	border-radius: 1000px;
+	border: 0px;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+	background: linear-gradient(319.49deg, #c40707 1.87%, #000000 109.19%);
+}
+.btn.btn-primary:hover {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		linear-gradient(319.49deg, #c40707 1.87%, #000000 109.19%);
+}
+
+.card:hover {
+	box-shadow: 0px 15px 50px 1px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease-in-out;
+}
+
+.red_label {
+	background-color: #c40707;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#bonus_coins {
+	font-weight: 700;
+	font-size: 0.875rem;
+	color: #ffffff;
+}
+
+.footer {
+	background: linear-gradient(319.49deg, #c40707 1.87%, #000000 109.19%);
+	padding: 50px 0;
+	margin-top: 10rem;
+}
+
+.footer-col {
+	width: 20%;
+}
+
+.footer-col a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.footer-col a:hover {
+	text-decoration: underline;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer_logo {
+	position: absolute;
+	right: 0;
+	margin-right: 100px;
+}
+
+.footer_logo img {
+	height: 60.96px;
+	width: 184px;
+}
+
+.social_links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social_links img {
+	width: 25px;
+	height: 25px;
+}
+
+.terms {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #ffffff;
+}
+
+.terms a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.terms a:hover {
+	text-decoration: underline;
+}
+
+.text {
+	text-align: center;
+}
+
+.text p {
+	color: #ffffff;
+	font-size: 14px;
+}
+
+#EggIncSuper {
+	width: 50%;
+	height: 200px;
+	display: flex;
+	margin: 20px auto;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+}
+
+#pokeball_20,
+#pokeball_100,
+#pokeball_200,
+#MaxRev_6,
+#MaxPotion,
+#Incense1,
+#TM,
+#IPCS,
+#PSU,
+#Incense8,
+#luckyegg1,
+#Incense8,
+#luckyegg8,
+#luremod,
+#luremod_8,
+#magneticmod,
+#maxpotion10,
+#mossymod,
+#poff,
+#PBP1,
+#PBP3,
+#rainymod,
+#RRP1,
+#RRP3,
+#RR,
+#SP1,
+#SP8,
+#C1,
+#C2,
+#C3,
+#C4,
+#C5,
+#C6 {
+	width: 50%;
+	height: auto;
+	display: flex;
+	margin: 50px auto;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+}
+
+#ISU {
+	width: 50%;
+	height: auto;
+	display: flex;
+	margin: 40px auto;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+}
+#EggIncubator {
+	width: 50%;
+	height: auto;
+	display: flex;
+	margin: 10px auto;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+}
+
+.Divider {
+	position: absolute;
+	left: 34rem;
+}
+
+@media (max-width: 767px) {
+	.footer-col {
+		width: 25%;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1600px) {
+	.footer_logo {
+		margin-right: 350px;
+	}
+	.promotion_image {
+		height: 1080px;
+	}
+}
+
+.card {
+	border-radius: 100px;
+	padding: 15px;
+}
+
+.card-img-top-centered {
+	margin: 0 auto;
+	display: block;
+}
+
+.container mb-4 mt-5 h1 {
+	margin-top: 400px;
+}
+
+.container {
+	margin-top: 130px;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-body .btn {
+	margin-top: auto; /* Align the button to the bottom of the card body */
+}
