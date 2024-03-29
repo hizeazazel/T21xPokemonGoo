@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../css/storestyle.css" />
 		<link
 			rel="shortcut icon"
 			href="https://storage.googleapis.com/platform-webstore-rel-assets/pgo/site_assets/favicon.ico"
@@ -14,350 +13,7 @@
 			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 			crossorigin="anonymous"
 		/>
-
-		<style>
-			body {
-				font-family: 'Montserrat', sans-serif;
-			}
-			.header,
-			.navbar {
-				background-color: #ffffff !important;
-			}
-			.header.active {
-				box-shadow: 0px 4px 11px -1px rgba(0, 0, 0, 0.25);
-			}
-			.promotion_image {
-				margin-top: 70px;
-				border: none;
-			}
-			.promotion_image h1 {
-				/*font-size: 70px;*/
-				font-size: clamp(0.4rem, 4.1vw, 6rem);
-			}
-			.snorlax img {
-				position: absolute;
-				top: 47% !important;
-				transform: translateY(-50%);
-				bottom: 0;
-				right: 10%;
-				width: clamp(50px, 31%, 600px);
-			}
-			.card-img-overlay {
-				/*top: auto !important;*/
-				top: 47% !important;
-				transform: translateY(-50%);
-				left: 5%;
-			}
-			.btn,
-			.navbtn {
-				border-radius: 1000px;
-				border: 0px;
-				color: #ffffff;
-				font-weight: 700;
-				font-size: 16px;
-				background: linear-gradient(319.49deg, #c40707 1.87%, #000000 109.19%);
-			}
-			.btn.btn-primary:hover,
-			.navbtn.btn-primary:hover,
-			.promobtn.btn-primary:hover {
-				background: linear-gradient(
-						0deg,
-						rgba(0, 0, 0, 0.3),
-						rgba(0, 0, 0, 0.3)
-					),
-					linear-gradient(319.49deg, #c40707 1.87%, #000000 109.19%);
-			}
-			.promobtn {
-				transform: skewX(-20deg);
-				border: 0px;
-				font-weight: 700;
-				font-size: clamp(0.4rem, 1vw, 1rem);
-				position: absolute;
-				bottom: 0;
-				right: 10%;
-				color: #ffffff;
-				background: linear-gradient(319.49deg, #c40707 1.87%, #000000 109.19%);
-			}
-			.promobtn.btn-primary:hover {
-				background: #ffffff;
-				color: #c40707;
-				transition: all 0.3s ease-in-out;
-			}
-			.offcanvas-body {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				height: 100%;
-			}
-			.offcanvas-body .navbtn {
-				display: block;
-				width: 35%;
-				margin-bottom: 10px;
-				justify-content: center;
-				text-align: center;
-			}
-			.card {
-				border-radius: 15px;
-				box-shadow: 0px 3px 13px -3px rgba(0, 0, 0, 0.2);
-				border-color: rgba(0, 0, 0, 0.1);
-			}
-			.card:hover {
-				box-shadow: 0px 15px 50px 1px rgba(0, 0, 0, 0.3);
-				transition: all 0.3s ease-in-out;
-			}
-			.red_label {
-				background-color: #c40707;
-				padding-top: 2px;
-				padding-bottom: 2px;
-				border-radius: 5px;
-				text-align: center;
-			}
-			.bonus_coins {
-				font-weight: 700;
-				font-size: 14px;
-				color: #ffffff;
-				text-decoration: none;
-			}
-			.download {
-				background: linear-gradient(319.49deg, #c40707 1.87%, #000000 109.19%);
-				/*width: 840px;
-            height: 290px;*/
-				max-width: 840px;
-				border-radius: 12px;
-				padding-top: 48px;
-				padding-bottom: 48px;
-				align-items: center;
-				justify-content: center;
-			}
-			.download_1 {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				height: 100%;
-			}
-			.download_1 img {
-				max-width: 100%;
-				height: auto;
-				width: auto;
-			}
-			.download_2 div {
-				justify-content: center;
-			}
-			.download_icons {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-			.download_icons img {
-				height: 40px;
-			}
-			#tagline h3 {
-				color: #ffffff;
-				font-weight: 700;
-				font-size: 48px;
-				text-align: center;
-			}
-			.rows {
-				display: flex;
-				flex-wrap: wrap;
-			}
-			.footer {
-				background: linear-gradient(319.49deg, #c40707 1.87%, #000000 109.19%);
-				padding: 50px 0;
-			}
-			.footer-col {
-				width: 20%;
-				display: flex;
-			}
-			.footer-col a {
-				color: #ffffff;
-				text-decoration: none;
-				font-size: 13px;
-			}
-			.footer-col a:hover {
-				text-decoration: underline;
-			}
-			ul {
-				list-style: none;
-			}
-			.footer_logo {
-				position: absolute;
-				right: 0;
-				margin-right: 100px;
-			}
-			.footer_logo img {
-				height: 60.96px;
-				width: 184px;
-			}
-			.social_links {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-			.social_links img {
-				width: 25px;
-				height: 25px;
-			}
-			.terms {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				border-top: 1px solid;
-				border-bottom: 1px solid;
-				padding-top: 20px;
-				padding-bottom: 20px;
-				color: #ffffff;
-			}
-			.terms a {
-				color: #ffffff;
-				text-decoration: none;
-				font-weight: 700;
-				font-size: 14px;
-			}
-			.terms a:hover {
-				text-decoration: underline;
-			}
-			.text {
-				text-align: center;
-			}
-			.text p {
-				color: #ffffff;
-				font-size: 14px;
-			}
-			.zarks {
-				color: #ffffff;
-				border: none;
-			}
-			.navbar-toggler-icon {
-				background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23c40707' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-			}
-			.btn-close {
-				background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23c40707'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
-				opacity: 1;
-				border: none !important;
-				box-shadow: none !important;
-			}
-
-			@media (max-width: 425px) {
-				.promobtn {
-					height: 10px;
-					width: 70px;
-				}
-				.px-4 {
-					padding-bottom: 1.25rem !important;
-					padding-top: 0.5rem !important;
-				}
-				.py-3 {
-					padding-left: 0.5rem !important;
-					padding-right: 0.5rem !important;
-				}
-			}
-
-			@media (max-width: 574px) {
-				.footer-col {
-					width: 100%;
-				}
-				.zarks {
-					margin-right: -100px;
-				}
-				.footer-col {
-					margin-top: 100px;
-				}
-				.navbar-brand {
-					padding-bottom: 0px !important;
-				}
-				.mx-5 {
-					margin-left: 0px !important;
-				}
-			}
-
-			@media (min-width: 500px) {
-				.card {
-					border-radius: 23px;
-				}
-			}
-
-			@media (min-width: 768px) {
-				.footer-col {
-					width: 25%;
-					margin-bottom: 30px;
-				}
-				.card {
-					border-radius: 12px;
-				}
-				.download {
-					display: flex;
-				}
-			}
-
-			@media (max-width: 900px) {
-				.navbar img {
-					width: 110px;
-					height: 32px;
-				}
-				.download_icons {
-					flex-direction: column;
-				}
-				#tagline h3 {
-					font-size: 28px;
-				}
-				.download_1 img {
-					margin-bottom: 30px;
-				}
-				.footer-col li {
-					font-size: 14px;
-				}
-				.terms {
-					flex-direction: column;
-				}
-				.terms a,
-				.text p {
-					font-size: 12px;
-				}
-				.bonus_coins {
-					font-size: 12px;
-				}
-				.col-4 {
-					width: 50%;
-				}
-				.container-sm.download {
-					width: 93%;
-				}
-				.promotion_image {
-					margin-top: 50px;
-				}
-			}
-
-			@media (max-width: 1050px) {
-				.navbar button.btn {
-					display: none;
-				}
-			}
-
-			@media (min-width: 1050px) {
-				.zarks {
-					display: none;
-				}
-			}
-
-			@media (min-width: 1600px) {
-				.footer_logo {
-					margin-right: 450px;
-				}
-				.card {
-					border-radius: 15px;
-				}
-			}
-
-			@media (min-width: 0px) {
-				.promotion_image.card {
-					border-radius: 0;
-					box-shadow: none;
-					border: none;
-				}
-			}
-		</style>
-
+		<link rel="stylesheet" type="text/css" href="../css/storestyle.css" />
 		<title>Pokemon Go Store</title>
 	</head>
 	<body>
@@ -1372,13 +1028,20 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="rows">
+					<div class="footer_logo">
+						<a href="https://nianticlabs.com/"
+							><img src="../assets/LOGO/footer-logo.png"
+						/></a>
+					</div>
 					<div class="footer-col">
 						<ul>
 							<li class="mb-4">
 								<a href="https://pokemongolive.com/">Pokémon GO Live</a>
 							</li>
 							<li class="mb-4">
-								<a href="https://pokemongolive.com/leaderboard">Leaderboard</a>
+								<a href="https://pokemongolive.com/leaderboard"
+									>Leaderboard</a
+								>
 							</li>
 							<li class="mb-4">
 								<a href="https://pokemongolive.com/events">Events</a>
@@ -1387,8 +1050,6 @@
 								<a href="https://pokemongolive.com/news">News</a>
 							</li>
 						</ul>
-					</div>
-					<div class="footer-col">
 						<ul>
 							<li class="mb-4">
 								<a href="https://store.pokemongolive.com/support">Support</a>
@@ -1405,26 +1066,21 @@
 							</li>
 						</ul>
 					</div>
-					<div class="footer_logo">
-						<a href="https://nianticlabs.com/"
-							><img src="../../assets/LOGO/footer-logo.png"
-						/></a>
-					</div>
 					<div class="container gap-5 social_links mt-4 mb-5">
 						<a href="https://www.youtube.com/channel/UCA698bls2pjQyiqP9N-iaeg"
-							><img src="../../assets/LOGO/youtube.png"
+							><img src="../assets/LOGO/youtube.png"
 						/></a>
 						<a href="https://www.facebook.com/PokemonGO/"
-							><img src="../../assets/LOGO/facebook.png"
+							><img src="../assets/LOGO/facebook.png"
 						/></a>
 						<a href="https://www.instagram.com/pokemongoapp/"
-							><img src="../../assets/LOGO/instagram.png"
+							><img src="../assets/LOGO/instagram.png"
 						/></a>
 						<a href="https://www.tiktok.com/@pokemongo"
-							><img src="../../assets/LOGO/tik-tok.png"
+							><img src="../assets/LOGO/tik-tok.png"
 						/></a>
 					</div>
-					<div class="container gap-5 terms mb-5">
+					<div class="container gap-4 terms mb-5">
 						<a href="https://nianticlabs.com/terms">Terms of Service</a>
 						<a href="https://nianticlabs.com/privacy">Privacy Policy</a>
 						<a href="https://nianticlabs.com/copyright">Copyright Policy</a>
@@ -1438,20 +1094,27 @@
 							Portuguese, Turkish, and Indonesian.
 						</p>
 						<p>
-							©2023 Niantic, Inc. ©2023 Pokémon. ©1995–2023 Nintendo / Creatures
-							Inc. / GAME FREAK inc. Pokémon and Pokémon character<br />
+							©2023 Niantic, Inc. ©2023 Pokémon. ©1995–2023 Nintendo /
+							Creatures Inc. / GAME FREAK inc. Pokémon and Pokémon
+							character<br />
 							names are trademarks of Nintendo. Apple and the Apple logo are
 							trademarks of Apple Inc., registered in the U.S. and other
 							countries. App<br />
-							Store is a service mark of Apple Inc. Android, Google Play and the
-							Google Play logo are trademarks of Google LLC. During gameplay,
-							please<br />
+							Store is a service mark of Apple Inc. Android, Google Play and
+							the Google Play logo are trademarks of Google LLC. During
+							gameplay, please<br />
 							be aware of your surroundings and play safely.
+						</p>
+						<p>
+							All images used on this website belong to NIANTIC and their
+							rightful owners. for educational purposes only. no copyright
+							infringement is intended.
 						</p>
 					</div>
 				</div>
 			</div>
 		</footer>
+		
 		<script>
 			window.addEventListener('scroll', function () {
 				const header = document.querySelector('.header');
